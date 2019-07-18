@@ -1,30 +1,36 @@
-\documentclass[12pt]{book}
+\documentclass[12pt,oneside]{book}
 \usepackage[dvips,xetex]{graphicx}
-\usepackage[margin=1in]{geometry} 
+%\usepackage[margin=1in]{geometry} 
+\usepackage[top=3cm, bottom=3cm, left=2.5cm, right=4cm]{geometry}
 \geometry{a4paper}
 \graphicspath{{images/}}
-\usepackage{titling}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\cfoot{\thepage}
+\lhead{}
+\usepackage[DIV=14,BCOR=2mm,headinclude=true,footinclude=false]{typearea}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{color}
 \usepackage{xepersian}
-
+\linespread{1.5}
 \settextfont{IRANSans}
 \title{\textbf{خودآموز زبان C}}
 
-%\author{نوشته شده توسط\\ \textbf{سعید}\\ \small \color{red}pymancore@riseup.net}
-
 \begin{document}
+
 \begin{figure}
 \centering
 \includegraphics[width=170mm]{c_artwork}
 \end{figure}
-\maketitle
-
+\clearpage\maketitle
+\thispagestyle{empty}
+\pagenumbering{Alph}
 \tableofcontents
-\addcontentsline{toc}{chapter}{پیش‌گفتار}
+\addcontentsline{toc}{chapter}{پیشگفتار}
 \input{chapters/preface}
+\pagenumbering{arabic}
 \input{chapters/ch1}
 \input{chapters/ch2}
 \input{chapters/ch3}

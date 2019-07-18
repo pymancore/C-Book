@@ -1,0 +1,32 @@
+\documentclass[12pt]{book}
+\usepackage[dvips,xetex]{graphicx}
+\usepackage[margin=1in]{geometry} 
+\geometry{a4paper}
+\graphicspath{{images/}}
+\usepackage{titling}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{color}
+\usepackage{xepersian}
+
+\settextfont{IRANSans}
+\title{\textbf{خودآموز زبان C}}
+
+%\author{نوشته شده توسط\\ \textbf{سعید}\\ \small \color{red}pymancore@riseup.net}
+
+\begin{document}
+\begin{figure}
+\centering
+\includegraphics[width=170mm]{c_artwork}
+\end{figure}
+\maketitle
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{پیش‌گفتار}
+\input{chapters/preface}
+\input{chapters/ch1}
+\input{chapters/ch2}
+\input{chapters/ch3}
+\input{chapters/ch4}
+\end{document}
