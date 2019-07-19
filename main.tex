@@ -1,4 +1,5 @@
 \documentclass[12pt,oneside]{book}
+\usepackage{lipsum}
 \usepackage[dvips,xetex]{graphicx}
 %\usepackage[margin=1in]{geometry} 
 \usepackage[top=3cm, bottom=3cm, left=2.5cm, right=4cm]{geometry}
@@ -6,23 +7,43 @@
 \graphicspath{{images/}}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
+\fancyhead[L]{left}
+\fancyhead[R]{right}
 \cfoot{\thepage}
 \lhead{}
+
+
+\usepackage{lipsum,fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}} % set the \leftmark
+\fancyhf{}% Clear header/footer
+\fancyhead[L]{\leftmark} % 1. sectionname
+\fancyfoot[C]{\thepage}
+\fancypagestyle{plain}{% Redefine plain pages tyle
+	\fancyhf{}% Clear header/footer
+	\renewcommand{\headrulewidth}{0.0pt}%
+	\fancyfoot[C]{\thepage}
+}
+
 \usepackage[DIV=14,BCOR=2mm,headinclude=true,footinclude=false]{typearea}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{color}
-\usepackage{xepersian}
+\usepackage[extrafootnotefeatures]{xepersian}
 \linespread{1.5}
+\renewcommand{\footnotesize}{\normalsize}
 \settextfont{IRANSans}
+%\settextfont{BZar}
+%\setlatintextfont{Times New Roman}
 \title{\textbf{خودآموز زبان C}}
+\author{سعید}
 
 \begin{document}
-
+\paragraphfootnotes
 \begin{figure}
 \centering
-\includegraphics[width=170mm]{c_artwork}
+\includegraphics[width=150mm]{c_artwork}
 \end{figure}
 \clearpage\maketitle
 \thispagestyle{empty}
