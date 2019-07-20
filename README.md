@@ -2,8 +2,11 @@
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
+
 مجوز امکان کپی، نشر، نمایش و اجرا اثر و آثار اشتقاقی آن فقط در صورتی وجود دارد  که حق تعیین نحوهٔ استفاده برای مجوز دهنده یا پدیدآورنده اثر محفوظ باشد.
 
+
+این کار مجوز دارد تحت [مجوز کریتیو کامنز تخصیص 4.0 بین‌المللی][cc-by].
 
 This work is licensed under a [Creative Commons Attribution 4.0 International
 License][cc-by].
